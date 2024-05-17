@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Burger Rush</title>
+</head>
+<body>
+
+<img src="./img/whatisthisingredient.png" width="1500" id="practice_title">
+<img src="./img/typetheansewer.png" width="800" id="practice_subtitle">
+
+<!--プロンプト画像を表示する場所 -->
+<div class="prompt_screen" >
+<p id="prompt_image"></p>
+<p id="answer_image"></p>
+</div>
+
+<!-- テキストボックス、入力内容確認ボタン -->
+
+<input type="text" id="textBox" autocomplete="off" placeholder=" Type here!  ">
+<!-- <input  name="" id="textBox" cols="105" rows="5" placeholder="Type your anser here!"></textarea> -->
+<button onclick="check();" id="btn_check">
+<img src="./img/check.png" alt="" width="300">
+</button>
+
+
+<!-- 入力内容が合っているか表示 -->
+<p id="area"></p>
+
+<!-- 次の問題に進む、テキストボックスをからにするボタン -->
+<!-- <input type="button" value="このページを再読込します" onclick="window.location.reload();" /> -->
+<button id="gonextprompt" onclick="window.location.reload();">
+    <img src="./img/next.png" alt="" width="300">   
+</button>
+<script>
+
+    prompt = ""
+    answer = ""
+
+    // 乱数を生成
+    const r = Math.ceil( Math.random()*7 );
+
+    //   レタスを表示
+     if (r==1){
+        prompt = '<img src="./img/lettuce.png"  width="1300">';
+      }
+
+    // 玉ねぎを表示　　　
+    if (r==2){
+         prompt = '<img src="./img/onion.png"  width="1300">';
+       }
+
+    // トマトを表示
+      if (r==3){
+        prompt = '<img src="./img/tomato.png"  width="1300">';
+      }
+    
+    // お肉を表示
+      if (r==4){
+         prompt = '<img src="./img/meat.png"  width="1300">';
+       } 
+    // チーズを表示
+       if (r==5){
+         prompt = '<img src="./img/cheese.png"  width="1300">';
+       }
+    // サラミを表示
+       if (r==6){
+         prompt = '<img src="./img/sarami.png"  width="1300">';
+       }
+
+    // えびを表示
+    if (r==7){
+         prompt = '<img src="./img/shurimp.png"  width="1300">';
+       }
+
+         $("#prompt_image").html(prompt).fadeIn(5000)
+
+    
+     function check(){
+        //テキストボックスの値を取得
+        var value = document.getElementById("textBox").value;
+       
+        // 乱数１　レタス
+        if ((value === "lettuce") && (r==1)) {
+            answer = '<img src="./img/correct_lettuce.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(100)
+        } if ((value !== "lettuce") && (r==1)){
+            answer = '<img src="./img/tryitagain.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(5000)
+        }
+
+        // 乱数２　玉ねぎ
+        if ((value === "onion") && (r==2)) {
+            answer = '<img src="./img/correct_onion.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(100)
+        } if ((value !== "onion") && (r==2)){
+            answer = '<img src="./img/tryitagain.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(5000)
+        }
+
+        // 乱数３　トマト
+        if ((value === "tomato") && (r==3)) {
+            answer = '<img src="./img/correct_tomato.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(100)
+        } if ((value !== "tomato") && (r==3)){
+            answer = '<img src="./img/tryitagain.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(5000)
+        }
+
+        // 乱数４　お肉
+        if ((value === "patty") && (r==4)) {
+            answer = '<img src="./img/correct_patty.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(100)
+        } if ((value !== "patty") && (r==4)){
+            answer = '<img src="./img/tryitagain.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(5000)
+        }
+
+        // 乱数５　チーズ
+        if ((value === "cheese") && (r==5)) {
+            answer = '<img src="./img/correct_cheese.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(100)
+        } if ((value !== "cheese") && (r==5)){
+            answer = '<img src="./img/tryitagain.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(5000)
+        }
+
+        // 乱数６　サラミ
+        if ((value === "salami") && (r==6)) {
+            answer = '<img src="./img/correct_salami.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(100)
+        } if ((value !== "salami") && (r==6)){
+            answer = '<img src="./img/tryitagain.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(5000)
+        }
+        
+        // 乱数７えび
+        if ((value === "shrimp") && (r==7)) {
+            answer = '<img src="./img/correct_shrimp.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(100)
+        } if ((value !== "shrimp") && (r==7)){
+            answer = '<img src="./img/tryitagain.png"  width="600">';
+            $("#answer_image").html(answer).fadeIn(5000)
+        }
+
+        }
+    
+
+    
+
+    
+</script>
+
+</body>
+</html>

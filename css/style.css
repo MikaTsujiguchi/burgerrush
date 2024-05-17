@@ -1,0 +1,182 @@
+/* @media screen and (max-width: 1200px){
+
+    img {
+    
+    width: 100% ;
+    
+    }
+    
+    } */
+
+    body{   
+        margin: 0 auto;
+        background-color: rgb(253, 246, 152);
+        width: 1500px;
+    }
+
+    #maintitle {
+        width: 1500px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .prompt_screen {
+        position: relative;
+    }
+
+    #textBox {
+       margin-left: 250px;
+       font-size: 450%;
+       
+       
+       margin-bottom: 10px;
+    }
+
+    #btn_check {
+        padding-top: 10px;
+    }
+
+    #answer_image {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        
+        margin-bottom: px;
+    }
+
+    #prompt_image {
+        margin-left: 100px;  
+    }
+
+    #practice_title{   
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    #practice_subtitle {
+        margin-left: 350px;
+        margin-bottom: 10px;
+    }
+
+    #gonextprompt {
+        border: none;
+        background: transparent;
+        margin-left: 210px;
+    }
+
+    #gonextprompt:hover {
+        transform: translateY(-20px);
+    }
+    
+    #btn_check {
+        border: none;
+        background: transparent;
+        margin-top: 20px;
+    }
+
+    #btn_check:hover{
+        transform: translateY(-20px);
+    }
+
+    li{
+        list-style: none;
+    }
+    
+    .wrap{
+
+        display: flex;
+    }
+
+    #order{
+       margin-left: 20px;
+    }
+
+    #textBox2 {
+        margin-top: 100px;
+        margin-left: 25px;
+        font-size: 200%;
+    }
+    #textBox3 {
+        margin-top: 180px;
+        margin-left: 25px;
+        font-size: 200%;
+    }
+    #textBox4 {
+        margin-top: 180px;
+        margin-left: 25px;
+        font-size: 200%;
+    }
+    #textBox5 {
+        margin-top: 180px;
+        margin-left: 25px;
+        font-size: 200%;
+    }
+
+    #btn_check2 {
+        border: none;
+        background: transparent;
+    }
+
+    #btn_check2:hover {
+        transform: translateY(-20px);
+        
+    }
+
+    .input_area {
+
+        margin-top: 390px;
+    }
+
+    #gonextprompt2 {
+        border: none;
+        background: transparent;
+        margin-top: 100px;
+        margin-left: 300px;
+    }
+
+    #gonextprompt2:hover {
+        transform: translateY(-20px);
+    }
+
+    #model_screen {
+
+        margin-top: 100px;
+    }
+
+    #ojt {
+        border: none;
+        background: transparent;
+        margin-left: 450px;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+
+    #ojt:hover {
+        transform: translateY(-20px);
+    }
+
+    #work {
+        border: none;
+        background: transparent;
+    }
+
+    #work:hover {
+        transform: translateY(-20px);
+    }
+
+    #start {
+
+        border: none;
+        background: transparent;
+
+        margin-left: 600px;
+    }
+
+    #start:hover {
+
+        transform: translateY(-20px);
+    }
+
+
+
+    
